@@ -1,0 +1,41 @@
+product 
+
+<div class="wrapper">
+    <div class="avatar"><img src="${product.picture}" alt=""></div>
+        <div class="name-ingredients">
+            <span class="name"></span>
+            <span class="ingregients"></span>
+        </div>
+        <div class="price"></div>
+        <button class="add-to-basket" data-item-id="">+</button>
+</div>
+
+footer 
+<span>Total</span>
+<buttton class="pay">Check Out</buttton>
+<span>23£</span>
+
+
+modal
+
+<div class="modal">
+    <div class="wrapper">
+    <div class="div1">
+            <div class="name-ingredients">
+                <span class="name">${product.name}</span>
+            </div>
+    </div>
+        <div class="div2">
+            <div class="price">${product.price}£</div>
+            <button class="remove-from-basket" data-item-id="${product.uuid}"></button>
+        </div>
+    </div>
+
+    <form class="payment">
+        <input type="email" placeholder="Enter Your Email">
+        <input type="text" placeholder="Enter Your Name">
+        <input type="number" placeholder="Enter Card Number">
+        <input type="number" placeholder="Enter CVV">
+        <button>Pay</button>
+    </form>
+</div>
