@@ -9,12 +9,24 @@ body{
     font-family: 'Merriweather', serif;
     font-size: 15px;
 }
+@media (min-width: 321px){
+    main{
+        width: 375px;
+        margin:0px auto 
+    }
+}
+
 .name{
     font-size:1.5rem;
     font-weight: 500;
 }
 .ingredients{
     font-size: .8rem;
+    color: rgb(44, 44, 44);
+}
+.price{
+    color: black;
+    font-size: 1.2rem;
 }
 header{
     display: flex;
@@ -55,12 +67,28 @@ header{
     align-items: start;
 
 }
-.add-to-basket{
+.btx{
+    height: 32px;
+    width: 32px;
+    color: white;
+    background-color: #464c3c;
+    text-align: center;
+    border-radius: 5px;
+    border: none
+}
+.bta{
     height: 20px;
     width: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #7d867d;
     text-align: center;
-    border-radius: 50%;
-    border: none;
+    border-radius: 5px;
+    border: none
+}
+.btx:focus,
+.btx:hover{
+    background-color: #525848;
+
 }
 .name{
     text-align: start;
@@ -80,6 +108,7 @@ img{
     height: 70%;
 }
 footer{
+    color: white;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -104,6 +133,8 @@ footer{
   }
 
 .basket{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(70,76,60,1) 70%);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,5 +143,33 @@ footer{
     box-shadow: 0px 0px 100px black;
     padding: 20px 10px;
     width: 90%;
+    border-radius: 15px; 
 }
-  
+.payment{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 5px 0px;
+    padding: 5px;
+    background-color: #464c3c;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+
+}
+.fa-cart-shopping{
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+.pays{
+    font-family: inherit;
+    font-weight: bold;
+    color: #464c3c;
+    background-color: orange;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}

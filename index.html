@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Hillside Brews</title>
 </head>
 <body>
@@ -23,9 +25,28 @@
     </header>
     <main>
         <div id="menu"></div>
-        <div class="basket">
+        <div class="basket" id="basket">
+            <spam><i class="fa-regular fa-circle-xmark"></i></spam>
+            <div class="items">
+                
+            </div>
+            <div class="payment">
+                <form class="payment">
+                    <input type="email" required placeholder="Enter Your Email" id="email">
+                    <input type="text" required placeholder="Enter Your Name" id="name">
+                    <input type="number" minlength="16" maxlength="19" required placeholder="Enter Card Number" id="card-number">
+                    <input type="number" required placeholder="Enter CVV" id="cvv">
+                    <button id="pay" class="pays">Pay</button>
+                    <div class="total">
+                        <span>Total</span>
+                        <span id="check-out-total"></span>
+                        <p id="err"></p>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
+    <div class="confirmation"></div>
     <footer id="footer">
 
     </footer>
